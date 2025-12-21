@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  21 DEC 2025 18:32
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  21 DEC 2025 18:41
  restricted system commands enabled.
 **MAIN.tex
 (./MAIN.tex
@@ -2519,12 +2519,14 @@ luaotfload | features : unsupported font option: nil (./MAIN.toc)
 ]
 (./sections/ClassicalMechanics/ClassicalMechanics.tex
 Chapter 1.
-
+luaotfload | features : unsupported font option: nil
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
-]) (./MAIN.bbl [2]) [3
+]
+luaotfload | features : unsupported font option: nil
+luaotfload | features : unsupported font option: nil) (./MAIN.bbl [2]) [3
 
 ] (./MAIN.aux)
  ***********
@@ -2532,20 +2534,20 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
-(rerunfilecheck)             Checksum: 22F03247812D779824649ECD3E7AE14C;257.
+(rerunfilecheck)             Checksum: 26AD8FF90DD31189612E223601A2C294;1109.
 )
 
 Here is how much of LuaTeX's memory you used:
- 58381 strings out of 476081
+ 58405 strings out of 476081
  125236,2373549 words of node,token memory allocated
- 1994 words of node memory still in use:
-   32 hlist, 2 vlist, 14 rule, 1 local_par, 8 glue, 4 kern, 2 penalty, 1 margin_
-kern, 5 glyph, 341 attribute, 69 glue_spec, 84 attribute_list, 2 write, 24 pdf_l
-iteral, 24 pdf_colorstack nodes
-   avail lists: 1:7,2:8241,3:1494,4:238,5:333,6:100,7:4768,8:4,9:978,10:10,11:27
-5
- 79363 multiletter control sequences out of 65536+600000
- 68 fonts using 30390035 bytes
+ 1983 words of node memory still in use:
+   32 hlist, 2 vlist, 14 rule, 1 local_par, 8 glue, 4 kern, 2 penalty, 4 glyph, 
+341 attribute, 69 glue_spec, 84 attribute_list, 2 write, 24 pdf_literal, 24 pdf_
+colorstack nodes
+   avail lists: 1:8,2:7407,3:1207,4:215,5:344,6:96,7:4636,8:4,9:854,10:10,11:274
+
+ 79381 multiletter control sequences out of 65536+600000
+ 71 fonts using 31936139 bytes
  143i,20n,130p,1000b,2776s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/libertinus-fonts/Liber
 tinusMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/
@@ -2555,10 +2557,10 @@ texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Regular.otf></usr/local/t
 exlive/2025/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Bold.otf></us
 r/local/texlive/2025/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Bold
 Italic.otf>
-Output written on MAIN.pdf (6 pages, 39487 bytes).
+Output written on MAIN.pdf (6 pages, 41596 bytes).
 
-PDF statistics: 137 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 20 named destinations out of 1000 (max. 131072)
- 272 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 164 PDF objects out of 1000 (max. 8388607)
+ 112 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 131072)
+ 312 words of extra memory for PDF output out of 10000 (max. 100000000)
 

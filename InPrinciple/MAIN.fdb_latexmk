@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex MAIN"] 1766359892.97118 "MAIN.aux" "MAIN.bbl" "MAIN" 1766359937.87864 0
+["bibtex MAIN"] 1766360494.09547 "MAIN.aux" "MAIN.bbl" "MAIN" 1766360496.9509 0
   "./CodexStyle/bibstyles/nature.bst" 1766355174.55542 20386 d75630dcbbf0d2ad8376367c85415d79 ""
   "./bibliography.bib" 1766355174.53924 1506 0b3f99cb80fa2411453b71550dcc88dc ""
-  "MAIN.aux" 1766359937.44921 1349 6fc8442b54bb3b58e29fc71d4ca05422 "lualatex"
+  "MAIN.aux" 1766360496.54023 2059 be812c3726eae5e437805bbb3e260000 "lualatex"
   (generated)
   "MAIN.bbl"
   "MAIN.blg"
   (rewritten before read)
-["lualatex"] 1766359935.04649 "MAIN.tex" "MAIN.pdf" "MAIN" 1766359937.87878 0
+["lualatex"] 1766360494.20083 "MAIN.tex" "MAIN.pdf" "MAIN" 1766360496.95105 0
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1765816340 5541421 df19a3ca965a3aa6d10e15cd6d721932 ""
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/ebgaramond-bold.luc" 1765408175.43823 775389 a3bb4c32b9cb78b1e82977c2126bcadf ""
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/ebgaramond-bolditalic.luc" 1765408174.66122 651881 3a88399370c49ad86e6bd09f871175cc ""
@@ -378,12 +378,12 @@
   "CodexStyle/preamble.tex" 1766356066.34609 5528 9d1ba6ad6b1ad0c42d95a1e0ab9b3b8d ""
   "CodexStyle/theme/longform_layout.sty" 1766356212.3351 1529 1945bedfebec9b5ad179a60b403bc109 ""
   "CodexStyle/theme/tikzstyles.sty" 1766355174.55577 1779 0ad275dc0145ecad9817137127a1e741 ""
-  "MAIN.aux" 1766359937.44921 1349 6fc8442b54bb3b58e29fc71d4ca05422 "lualatex"
-  "MAIN.bbl" 1766359893.05841 629 9662653d91062f480662a70a1d914e31 "bibtex MAIN"
-  "MAIN.out" 1766359937.45021 257 22f03247812d779824649ecd3e7ae14c "lualatex"
+  "MAIN.aux" 1766360496.54023 2059 be812c3726eae5e437805bbb3e260000 "lualatex"
+  "MAIN.bbl" 1766360494.19423 629 9662653d91062f480662a70a1d914e31 "bibtex MAIN"
+  "MAIN.out" 1766360496.54023 1109 26ad8ff90dd31189612e223601a2c294 "lualatex"
   "MAIN.tex" 1766357637.17214 3584 1f4a2082f655adca298b2e8e6e3c100f ""
-  "MAIN.toc" 1766359937.45021 173 86d82b2e89556b14a0d8e59729d8e037 "lualatex"
-  "sections/ClassicalMechanics/ClassicalMechanics.tex" 1766359934.96721 2189 33a44d1658cb8cb562a0f504349d238d ""
+  "MAIN.toc" 1766360496.54023 594 3e9be99120b25a6a2611ca77f6578ba6 "lualatex"
+  "sections/ClassicalMechanics/ClassicalMechanics.tex" 1766360491.27723 2443 c604b272cc87c0340d58ae9de17c4cec ""
   "sections/TitlePage.tex" 1766357565.83514 400 a9f402401f65c1b68d902adc4372c984 ""
   (generated)
   "MAIN.aux"
