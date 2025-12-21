@@ -1,0 +1,3 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Classical Mechanics}{1}{chapter.1}%
+\contentsline {chapter}{Bibliography}{2}{tcb@cnt@corollarybox.1.1}%

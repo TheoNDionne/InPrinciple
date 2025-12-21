@@ -1,0 +1,113 @@
+%================================================================================================%
+% Codex longform document template for LuaLaTeX, provided by T.N. Dionne                         %
+% Forked from a template initiated by Prof. D. Sénéchal (2013) and modified by J. Leblanc (2025) %
+% This template is offered free of warranty and may be freely modified                           %
+%================================================================================================%
+
+%%% Choose between electronic and print versions
+\documentclass[titlepage,oneside,letterpaper,11pt]{book} % electronic
+%\documentclass[titlepage,twoside,letterpaper,openright,12pt]{book} % print
+
+%%% Insert date here
+\def\DATE{\color{red}DATE DU DEPOT FINAL\color{black}}
+
+\input{CodexStyle/preamble.tex} % should just autowork...
+\begin{document}
+
+%-------------------------------------------------------------------------------
+% page titre
+\input{sections/TitlePage.tex}
+\frontmatter
+
+%-------------------------------------------------------------------------------
+% Page de dédicace
+
+\newpage
+\vglue 5cm
+\begin{flushright}
+This one goes out to all the homies.
+\end{flushright}
+
+
+%-------------------------------------------------------------------------------
+% Sommaire
+% \newpage
+% \onehalfspacing
+% \addcontentsline{toc}{chapter}{Sommaire}\chapter*{Sommaire}
+% \input{sections/debut/sommaire}
+
+%-------------------------------------------------------------------------------
+% remerciements
+
+% \chapter{Remerciements}
+
+% \markboth{Remerciements}{Remerciements}
+% \input{sections/debut/remerciements}
+
+%-------------------------------------------------------------------------------
+% tables des matières, des tableaux et des figures, etc.
+
+{
+\setlength{\parskip}{0ex}
+\tableofcontents
+% \listoftables
+% \listoffigures
+}
+
+% TODO EXPAND ON THIS, VERY CRISPY
+% facultatif: liste des notations (abbréviations) utilisées
+% \addcontentsline{toc}{chapter}{Notations}\chapter*{Notations}
+% \markboth{Notations}{}
+% \input{notation.tex}
+
+%-------------------------------------------------------------------------------
+% publications
+
+% \chapter{Publications}
+% \markboth{Publications}{Publications}
+% \input{sections/debut/publications}
+
+%-------------------------------------------------------------------------------
+% corps du document
+\mainmatter
+
+% facultatif: introduction non numérotée
+% \addcontentsline{toc}{chapter}{Introduction} % Add in the intro to the TOC
+% \chapter*{Introduction}
+% \markboth{Introduction}{Introduction}
+% \input{sections/debut/introduction}
+
+\input{sections/ClassicalMechanics/ClassicalMechanics.tex}
+
+%-------------------------------------------------------------------------------
+% conclusion
+
+% \addcontentsline{toc}{chapter}{Conclusion}\chapter*{Conclusion}
+% \markboth{Conclusion}{Conclusion}
+% \input{sections/fin/conclusion}
+
+
+%-------------------------------------------------------------------------------
+% annexes
+%\appendix
+%\renewcommand\chapterstring{Annexe}
+% \input{sections/fin/annexe}
+
+%-------------------------------------------------------------------------------
+% bibliographie
+
+% TODO: SWAP THIS FOR SOMETHING MODERN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\singlespacing
+\nocite{*} % Shows all references regardless of if cited
+\bibliographystyle{CodexStyle/bibstyles/nature} % Use "nature" for english version
+\addcontentsline{toc}{chapter}{Bibliography} % Add bibliography
+\bibliography{bibliography}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SO LONG SPACE COWBOY...
+% \singlespacing
+% \nocite{*}
+% \printbibliography
+
+\end{document}

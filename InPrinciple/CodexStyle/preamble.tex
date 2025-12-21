@@ -1,0 +1,160 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%----------------Language Support---------------
+\usepackage[french,english]{babel} % language support priority language last
+
+%%% French renamings
+\addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
+\addto\captionsfrench{%
+  \renewcommand{\refname}{Bibliographie}%
+}
+
+%--------------------Colors---------------------
+\usepackage[x11names]{xcolor} % adds in typical color features
+
+%%% Choose color theme
+\usepackage{CodexStyle/colorthemes/colors_marine} % choose a style
+
+%---------------General packages----------------
+\usepackage{setspace}        % line spacing
+\usepackage{cite}            % in text citations
+\usepackage{microtype}       % small typography tweaks
+\usepackage{graphicx}		 % figure insertion
+\usepackage{subfig}			 % allows for subfigures MIGRATE TO A MODERN PACKAGE MAYBE
+\usepackage{geometry}		 % document geometry
+\usepackage{fancybox}		 % boxes, frames etc
+\usepackage{url}             % typographically sound URLs
+\usepackage{float}           % Fixes hacky geometry problems
+\usepackage[
+format    = hang,
+margin    = 5mm,
+font      = small,
+labelfont = bf,
+labelsep  = space
+]{caption}                   % tweak caption layout and format
+\usepackage{csquotes}        % For quotes
+% \newcommand\itsym{$\bullet$} % symbole pour les listes
+
+\usepackage{hyperref}[
+    backref     = page,
+    pagebackref = true,
+    hyperindex  = true,
+    bookmarks   = true,
+    pdfa
+]
+
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+% \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22] % ???
+% !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+% options PDF
+\hypersetup{
+    colorlinks=true,         % colorise les liens
+    breaklinks=true,         % permet le retour la ligne dans les liens trop longs
+    urlcolor=URLColor,       % couleur des hyperliens (doit inclure x11names dans xcolor ci-dessus)
+    linkcolor=LinkColor,     % couleur des liens internes
+    citecolor=CiteColor,     % couleur des liens de citation
+    bookmarksopen=true,      % ouvre les signets PDF au départ
+}
+
+%---------------CodexStyle layout---------------
+% Switches between longform and shortform automatically
+\makeatletter
+\@ifclassloaded{book}{
+    \usepackage{CodexStyle/theme/longform_layout} % load longform
+}{
+\@ifclassloaded{article}{
+    \usepackage{CodexStyle/theme/shortform_layout} % load shortform
+}{
+    \PackageError{mydoc}
+        {Unsupported document class!}
+        {`book` -> longform, `article` -> shortform}
+}}
+\makeatother
+
+%------------------Math Setup-------------------
+\usepackage{amsmath}          % math environments
+\usepackage{mathtools}        % tools for math formating
+\usepackage[nice]{nicefrac}   % nicer fractions
+\usepackage{cancel}           % allows to scratch expressions.
+\usepackage{slashed}          % allows to slash individual characters.
+\usepackage{xargs}            % better handling of optional arguments for commands
+\usepackage{braket}           % convenient Dirac notation
+\usepackage{empheq}           % colored boxes in math env
+\usepackage[most]{tcolorbox}  % adds colorful box environments
+
+%%% Import custom math macros
+\usepackage{CodexStyle/math_macros} % custom latex macros (macros.sty)
+
+%------------Fonts (Body and Math)--------------
+\usepackage{fontspec} % Finer font selection (requires Lua/XeLaTeX)
+\usepackage{unicode-math} % Finer math font selection
+
+%%% Main font switches based on documentclass
+\makeatletter
+\@ifclassloaded{book}{
+    \setmainfont{EB Garamond}[ % EB Garamond
+        Ligatures   = TeX, % ligatures
+        OpticalSize = On, % optical weight adjustment
+        % Numbers     = OldStyle, % can be a little hard to read
+        SmallCapsFeatures = {LetterSpace=5} % Adds spaces for small caps
+    ]
+}{
+\@ifclassloaded{article}{
+    \setmainfont{Libertinus Serif}[ % Libertinus in short documents
+        Ligatures = TeX,
+        Kerning   = On,
+    ]
+}{
+    \PackageError{mydoc}
+        {Unsupported document class!}
+        {`book` -> longform, `article` -> shortform}
+}}
+\makeatother
+
+%%% Math fonts (Libertinus and Latin Modern)
+\setmathfont{Libertinus Math}[ % nice neutral (near) universal math font
+    Scale=MatchLowercase % set scale
+]
+\setmathfont{Latin Modern Math}[ % A few swaps and additions
+    range = {\dagger, \ddagger, \mathcal}, % less dramatic daggers and distinct mathcal
+    Scale=MatchLowercase % set scale
+]
+
+%--------------------Tables---------------------
+\usepackage{array} % tabular functions
+\usepackage{dcolumn} % allows for aligning of values wrt to the decimal
+\newcolumntype{C}{>{$\displaystyle}c<{$}} % centered math column
+\newcolumntype{L}{>{$\displaystyle}l<{$}} % left aligned math column
+\newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
+\renewcommand{\arraystretch}{1.5} % vertical spacing of tables
+
+%%% UNDER CONSTRUCTION %%%
+%-------------------------------------------------------------------------------
+% Figures TiKz !!!TODO FIX THIS!!!
+\usepackage{tikz}
+\usetikzlibrary{
+	calc,
+	patterns,
+	positioning,
+    external,
+    shapes,
+    fit,
+    backgrounds,
+    arrows.meta,
+	positioning,
+    decorations,
+    decorations.pathmorphing,
+    decorations.markings,
+    shapes.geometric,
+    arrows
+}
+% \tikzexternalize[prefix=figures/pdf/]
+
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+\pgfdeclarelayer{background}
+\pgfdeclarelayer{foreground}
+\pgfsetlayers{background,main,foreground}
+
+\usepackage{CodexStyle/theme/tikzstyles}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
