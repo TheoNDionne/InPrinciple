@@ -28,7 +28,9 @@ Of course, we also know that things \textit{happen}. Indeed, we have an intuitiv
     \red{The definition of time.} Once a temporal origin is chosen, the number that encodes the time is called $t\in\mathbb{R}$.
 \end{definitionbox}
 
-\red{This is where there is a figure of some trajectory... this also serves as inspo for what comes next}
+\red{This is where there is a figure of some trajectory... this also serves as inspo for what comes next} From \red{figure}, one can see that we can keep track of how the position of an object changed with respect to time. This can then \red{inspire determinism, the fact that there is a predetermined path for matter.}. An important ingredient is the notion that \enquote{things happen for a reason}. If the classical path is predetermined, then if we have enough information about the path at one given time $t$, then we should be able to predict the future behaviour. This can be related to causality.
+
+\red{Notion of a classical trajectory}
 
 \begin{axiombox}{Determinism}{ax:determinism}
 
@@ -38,25 +40,98 @@ Of course, we also know that things \textit{happen}. Indeed, we have an intuitiv
 
 \end{axiombox}
 
+\red{
+    Speech that brings up the idea behind locality
+}
+
 \begin{axiombox}{Locality}{ax:locality}
 
 \end{axiombox}
 
-\red{Notion of a classical trajectory}
+A consequence of locality in time tells us that no time derivative above the second degree shall be a necessary ingredient in classical theory. Hence, since the path is supposed to be preditermined and that it is causal, hence, deducable from what has preceded, we can assume that the path can be determined from time local ingredients. This is to say that there is some differential equation of \textit{at most} second order. Hence, we arrive at a first precise statement.
 
 \begin{corollarybox}{Equation of Motion}{cor:EoM}
-\red{change color to match the axioms.}
+    The classical trajectory of an object in classical mechanics must, from the axioms above, obey a second order differential equation.
+    \al{
+        \mathcal{N}[\ve{q}(t),\dot{\ve{q}}(t),\ddot{\ve{q}}(t),t] = \mathcal{N}(t) = 0 \label{eq:EoM}
+    }
 \end{corollarybox}
 
-\begin{axiombox}{Galilean invariance}{ax:GalInvar}
+The above corollary \red{box} then tells us that for one given time $t=t_i$ knowledge of the position $\ve{q}(t_i)$ and velocity $\dot{\ve{q}}(t_i)$ fixes the classical trajectory\footnote{
+    This is a result from the theory of differential equations that a differential equation of second order requires two boundary conditions to fix the solution entirely [\red{name of the theorem and reference}]
+}. In principle, this is all we need theoretically to \textit{solve} classical mechanics on the mathematical front.
 
+\begin{axiombox}{Galilean invariance}{ax:GalInvar}
+    \red{Frames moving at constant velocity are physically equivalent.}
 \end{axiombox}
 
-\section{The functional approach}
-\red{}
+\red{Some spiel about fixing instead position at two different paths.}
+Notice aswell that the existence of a differential equation \eqref{eq:EoM} implies necessarily the existence of its vanishing integral
+\al{
+    \mathcal{I}[\ve{q}, \dot{\ve{q}};t_i,t_f] = \Int[t_i][t_f] \mathcal{N}[\ve{q},\dot{\ve{q}},\ddot{\ve{q}},t] = 0
+}
 
-\section{The equations of motion}
+\section{The functional approach}
+
+\subsection{The action and the lagrangian}
+
+In the interest of generality, we may adopt the functional approach from the very beginning given its generality.
+
+This functional $\mathcal{I}$ is slightly undesirable as it depends formally on the velocity aswell, which is redundant given the fact that we already possess two positions. Hence, we may integrate with respect to the position to obtain:
+\al{
+    \mathcal{S}[\ve{q}] = \int\mathcal{D}[\ve{q}]\mathcal{I}[\ve{q}, \dot{\ve{q}}]
+}
+This integral is a constant with respect to the path when evaluated for the classical trajectory $\mathcal{S}[\ve{q}_c] = C$ and is called the \textit{action}. This implies that the classical trajectory obeys the following condition:
+\al{\cboxed{
+    \delta\mathcal{S} = 0
+}}
+where $\delta$ signifies the total variation. We may now wonder what this condition implies on the integrand $\mathcal{L}$,\red{whoah, I haven't even introduced the procedure completely...its about guesswork and foregiveness...} this procedure is a standard step in the calculus of variations:
+\al{
+    \delta\mathcal{S} &= \Int[t_i][t_f]\D{t}\,\delta\mathcal{L}\notag\\
+    &= \Int[t_i][t_f]\D{t}\,\cro{\ddf[\mathcal{L}]{\ve{q}}\cdot\delta\ve{q} + \ddf[\mathcal{L}]{\dot\ve{q}}\cdot\delta\dot\ve{q}}\notag\\
+    &= \Int[t_i][t_f]\D{t}\,\cro{\ddf[\mathcal{L}]{\ve{q}} - \dd{t}\ddf[\mathcal{L}]{\mkern1.5mu\dot\ve{q}}}\cdot\delta\ve{q} + \cro{\ddf[\mathcal{L}]{\mkern1.5mu\dot\ve{q}}\cdot\delta\ve{q}}_{t=t_i}^{t=t_f}\notag\\
+}
+
+Two remarks are in order. First, we have used the fact that trajectory and velocity are explicitely linked such that $\delta\dot{\ve{q}} = \dd{t}\delta\ve{q}$. Second, the variation of the path vanishes by definition at the boundaries of the integral, hence, the second term above is always zero.
+
+Since the variation is assumed to be arbitrary, we can see that the action only vanishes for any choice of boundary if:
+\al{\cboxed{
+    \ddf[\mathcal{L}]{\ve{q}} - \dd{t}\ddf[\mathcal{L}]{\mkern1.5mu\dot\ve{q}} = 0
+}}
+This condition is known as the Euler-Lagrange equation and is a fundamental result of variational calculus.
+
+\subsection{Redundance in the lagrangian formalism}
+
+Notice that the condition that the variation of the action vanishes for the physical trajectory allows for some redundance. For example,
+\al{
+    \mathcal{S}'[\ve{q}] &= \alpha\mathcal{S}[\ve{q}] + C\notag\\
+    \delta\mathcal{S}'[\ve{q}] &= \alpha\delta\mathcal{S}[\ve{q}] = 0
+}
+It is then seen that $\mathcal{S}$ and $\mathcal{S}'$ yield exactly the same path. The case for the lagrangian is even less constraining:
+\al{
+    \mathcal{L}'[\ve{q}, \dot{\ve{q}};t] &= \alpha\mathcal{L}[\ve{q}, \dot{\ve{q}};t] + \dd[\mkern-1.5mu f]{t}\notag\\
+    \Int[t_i][t_f]\D{t}\,\mathcal{L}'[\ve{q}, \dot{\ve{q}};t] &= \alpha\Int[t_i][t_f]\D{t}\,\mathcal{L}[\ve{q}, \dot{\ve{q}};t] + f(t_f) - f(t_i)\notag\\
+    \mathcal{S}'[\ve{q}] &= \alpha\mathcal{S}[\ve{q}] + f(t_f) - f(t_i)\notag\\
+}
+These lagrangians yield exactly the same physical solution as they are stationnary for the same trajectory. It should also be checked that this same redundance is reflected in the Euler-Lagrange condition.
+
+\section{Equations of motion of a particle}
+
+Part of the magic of the Lagrangian formalism is that it allows for one to obtain the equations of motion based on a guess for the lagrangian. This \enquote{educated guess} is often based on the grounds of \textit{symmetries} and \textit{invariance}. This procedure can be generalized in many ways and forms the backbone of a great part of modern physics.
 
 \subsection{Free particle}
 
-\subsection{Interacting particle}
+A free pointlike particle has to be one of the simplest cases to analyze. By free here, I mean that the particle is in a perfect unchanging vacuum. We may now pare down the form of the lagrangian until we find the equations of motion of a free particle.
+
+Do we expect the behaviour of the particle to change based on \textit{where} it is? How about \textit{when}? More subtly, how about the direction it moves in? The answer to all of these questions is no. By supposition, all points in space and time are identical. The last thing on which the lagrangian may depend upon is the magnitude of the velocity $\abs{\dot{\ve{q}}}$. Given the definition of the norm of a vector in euclidean space $|v|\equiv\sqrt{\ve{v}\cdot\ve{v}}$, we can say then that the lagrangian depends only on the inner product $\ve{v}\cdot\ve{v}= \ve{v}^2$
+\al{
+    \mathcal{L} = \mathcal{L}[\ve{v}^2]
+}
+
+\subsection{Constrained particle}
+
+Alla Landau
+
+\section{Continuous symmetries and conserved quantities}
+
+One of the most elegant results in the lagrangian formalism is Noether's first theorem. It states that a continuous symmetry implies a conserved quantity and vice-versa.

@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex MAIN"] 1766360494.09547 "MAIN.aux" "MAIN.bbl" "MAIN" 1766360496.9509 0
+["bibtex MAIN"] 1766421167.3525 "MAIN.aux" "MAIN.bbl" "MAIN" 1766423320.33458 0
   "./CodexStyle/bibstyles/nature.bst" 1766355174.55542 20386 d75630dcbbf0d2ad8376367c85415d79 ""
   "./bibliography.bib" 1766355174.53924 1506 0b3f99cb80fa2411453b71550dcc88dc ""
-  "MAIN.aux" 1766360496.54023 2059 be812c3726eae5e437805bbb3e260000 "lualatex"
+  "MAIN.aux" 1766423319.50112 2564 e98673674fd8bf35204ca37940f92ac5 "lualatex"
   (generated)
   "MAIN.bbl"
   "MAIN.blg"
   (rewritten before read)
-["lualatex"] 1766360494.20083 "MAIN.tex" "MAIN.pdf" "MAIN" 1766360496.95105 0
+["lualatex"] 1766423314.55452 "MAIN.tex" "MAIN.pdf" "MAIN" 1766423320.3349 2
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1765816340 5541421 df19a3ca965a3aa6d10e15cd6d721932 ""
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/ebgaramond-bold.luc" 1765408175.43823 775389 a3bb4c32b9cb78b1e82977c2126bcadf ""
   "/home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/luatex-cache/generic/fonts/otl/ebgaramond-bolditalic.luc" 1765408174.66122 651881 3a88399370c49ad86e6bd09f871175cc ""
@@ -24,9 +24,12 @@
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Italic.otf" 1679344195 306080 fa38657c318818be95501a485967b47e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/ebgaramond/EBGaramond-Regular.otf" 1679344195 379308 c3133d2af9ea5c7f03dfc0b08cdfee46 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/libertinus-fonts/LibertinusMath-Regular.otf" 1727726590 588848 85516be07e4691c1817fa657a3ec9349 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1136768653 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1136768653 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
+  "/usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm" 1136768653 1524 d89e2d087a9828407a196f428428ef4a ""
   "/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/babel-english/english.ldf" 1496785618 7008 9ff5fdcc865b01beca2b0fe4a46231d4 ""
   "/usr/local/texlive/2025/texmf-dist/tex/generic/babel-french/french.ldf" 1755293200 47319 b47cc42e0d211cf69f68d58f695ca90c ""
@@ -378,12 +381,12 @@
   "CodexStyle/preamble.tex" 1766356066.34609 5528 9d1ba6ad6b1ad0c42d95a1e0ab9b3b8d ""
   "CodexStyle/theme/longform_layout.sty" 1766356212.3351 1529 1945bedfebec9b5ad179a60b403bc109 ""
   "CodexStyle/theme/tikzstyles.sty" 1766355174.55577 1779 0ad275dc0145ecad9817137127a1e741 ""
-  "MAIN.aux" 1766360496.54023 2059 be812c3726eae5e437805bbb3e260000 "lualatex"
-  "MAIN.bbl" 1766360494.19423 629 9662653d91062f480662a70a1d914e31 "bibtex MAIN"
-  "MAIN.out" 1766360496.54023 1109 26ad8ff90dd31189612e223601a2c294 "lualatex"
+  "MAIN.aux" 1766423319.50112 2564 e98673674fd8bf35204ca37940f92ac5 "lualatex"
+  "MAIN.bbl" 1766421167.58916 629 9662653d91062f480662a70a1d914e31 "bibtex MAIN"
+  "MAIN.out" 1766423319.50123 1935 4209acfa53d7cdc72db46a98eb0cc5ab "lualatex"
   "MAIN.tex" 1766357637.17214 3584 1f4a2082f655adca298b2e8e6e3c100f ""
-  "MAIN.toc" 1766360496.54023 594 3e9be99120b25a6a2611ca77f6578ba6 "lualatex"
-  "sections/ClassicalMechanics/ClassicalMechanics.tex" 1766360491.27723 2443 c604b272cc87c0340d58ae9de17c4cec ""
+  "MAIN.toc" 1766423319.50123 912 1c80cb112c512603aebcdad35a102835 "lualatex"
+  "sections/ClassicalMechanics/ClassicalMechanics.tex" 1766423314.32023 9245 21068f50e3dbbdaab2434251250ca9d2 ""
   "sections/TitlePage.tex" 1766357565.83514 400 a9f402401f65c1b68d902adc4372c984 ""
   (generated)
   "MAIN.aux"

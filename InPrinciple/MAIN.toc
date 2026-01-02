@@ -1,8 +1,11 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{\numberline {1}Classical Mechanics}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1} Setup of classical mechanics }{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}The functional approach}{2}{section.1.2}%
-\contentsline {section}{\numberline {1.3}The equations of motion}{2}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Free particle}{2}{subsection.1.3.1}%
-\contentsline {subsection}{\numberline {1.3.2}Interacting particle}{2}{subsection.1.3.2}%
-\contentsline {chapter}{Bibliography}{2}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.2}The functional approach}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}The action and the lagrangian}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Redundance in the lagrangian formalism}{3}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}Equations of motion of a particle}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Free particle}{4}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Constrained particle}{4}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}Continuous symmetries and conserved quantities}{4}{section.1.4}%
+\contentsline {chapter}{Bibliography}{4}{section.1.4}%

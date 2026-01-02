@@ -431,6 +431,9 @@ INPUT /home/local/USHERBROOKE/diot0801/.texlive2025/texmf-var/fonts/map/pdftex/u
 INPUT ./MAIN.toc
 OUTPUT MAIN.toc
 INPUT ./sections/ClassicalMechanics/ClassicalMechanics.tex
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT ./MAIN.bbl
 INPUT ./MAIN.aux
 INPUT ./MAIN.out
