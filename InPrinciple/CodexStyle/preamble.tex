@@ -1,40 +1,73 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%----------------Language Support---------------
-\usepackage[french,english]{babel} % language support priority language last
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%                                                      PREAMBLE.STY
+%
+% Elements configured here:
+%
+%       -> Control panel (high level control for LANGUAGE and COLORTHEME)
+%       -> Language Support
+%       -> Colors (switches between different color themes) [/CodexStyle/colorthemes/...]
+%       -> General Packages
+%       -> Document Layout (switches between different layouts) [/CodexStyle/layouts/...]
+%       -> Math Setup (math packages)
+%       -> Fonts (Body)
+%       -> Fonts (Math)
+%       -> Tables
+%       -> Graphical Setup (tikz pgfplots)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%%% French renamings
+%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%
+%                 Control Panel                 %
+%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%!%
+%
+\newcommand{\CodexLanguage}{french} % set language
+\newcommand{\CodexColorTheme}{CodexStyle/colorthemes/colors_marine} % set colortheme (path to desired .sty)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                Language Support               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[\CodexLanguage]{babel} % language support priority language last (set in control panel)
+
+% French renamings ------------------------------
 \addto\captionsfrench{\renewcommand\frenchtablename{{\FBfigtabshape Tableau}}} % rename table name (french)
 \addto\captionsfrench{%
   \renewcommand{\refname}{Bibliographie}%
 }
 
-%--------------------Colors---------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Colors                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage[x11names]{xcolor} % adds in typical color features
+\usepackage{\CodexColorTheme} % choose a style (set in control panel)
 
-%%% Choose color theme
-\usepackage{CodexStyle/colorthemes/colors_marine} % choose a style
 
-%---------------General packages----------------
-\usepackage{setspace}        % line spacing
-\usepackage{cite}            % in text citations
-\usepackage{microtype}       % small typography tweaks
-\usepackage{graphicx}		 % figure insertion
-\usepackage{subfig}			 % allows for subfigures MIGRATE TO A MODERN PACKAGE MAYBE
-\usepackage{geometry}		 % document geometry
-\usepackage{fancybox}		 % boxes, frames etc
-\usepackage{url}             % typographically sound URLs
-\usepackage{float}           % Fixes hacky geometry problems
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%               General Packages                %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{setspace}  % line spacing
+\usepackage{cite}      % in text citations
+\usepackage{microtype} % small typography tweaks
+\usepackage{graphicx}  % figure insertion
+\usepackage{subfig}	   % allows for subfigures MIGRATE TO A MODERN PACKAGE MAYBE
+\usepackage{geometry}  % document geometry
+\usepackage{fancybox}  % boxes, frames etc
+\usepackage{url}       % typographically sound URLs
+\usepackage{float}     % Fixes hacky geometry problems
 \usepackage[
 format    = hang,
 margin    = 5mm,
 font      = small,
 labelfont = bf,
 labelsep  = space
-]{caption}                   % tweak caption layout and format
-\usepackage{csquotes}        % For quotes
-% \newcommand\itsym{$\bullet$} % symbole pour les listes
-
-\usepackage{hyperref}[
+]{caption}             % tweak caption layout and format
+\usepackage{csquotes}  % For quotes
+\usepackage{hyperref}[ % hyperref with some setup
     backref     = page,
     pagebackref = true,
     hyperindex  = true,
@@ -46,32 +79,43 @@ labelsep  = space
 % \usepackage[a-2b,mathxmp]{pdfx}[2018/12/22] % ???
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-% options PDF
+% more hyperref options
 \hypersetup{
-    colorlinks=true,         % colorise les liens
-    breaklinks=true,         % permet le retour la ligne dans les liens trop longs
-    urlcolor=URLColor,       % couleur des hyperliens (doit inclure x11names dans xcolor ci-dessus)
-    linkcolor=LinkColor,     % couleur des liens internes
-    citecolor=CiteColor,     % couleur des liens de citation
-    bookmarksopen=true,      % ouvre les signets PDF au départ
+    colorlinks=true,         % colorize links
+    breaklinks=true,         % carriage return for long links
+    urlcolor=URLColor,       % hyperlink url color
+    linkcolor=LinkColor,     % internal link color
+    citecolor=CiteColor,     % citation link color
+    bookmarksopen=true,      % opens pdf bookmarks in the beginning
 }
 
-%---------------CodexStyle layout---------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 Document Layout               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 % Switches between longform and shortform automatically
 \makeatletter
-\@ifclassloaded{book}{
-    \usepackage{CodexStyle/theme/longform_layout} % load longform
+\@ifclassloaded{book}{ %%% BOOK %%%
+    \usepackage{CodexStyle/layouts/longform_layout} % load longform
 }{
-\@ifclassloaded{article}{
-    \usepackage{CodexStyle/theme/shortform_layout} % load shortform
+\@ifclassloaded{article}{ %%% ARTICLE %%%
+    \usepackage{CodexStyle/layouts/shortform_layout} % load shortform
+}{
+\@ifclassloaded{beamer}{ %%% BEAMER %%%
+    \usepackage{CodexStyle/layouts/presentation_layout} % load presentation
 }{
     \PackageError{mydoc}
         {Unsupported document class!}
-        {`book` -> longform, `article` -> shortform}
-}}
+        {`book` -> longform, `article` -> shortform, `beamer` -> presentation}
+}}}
 \makeatother
 
-%------------------Math Setup-------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Math Setup                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{amsmath}          % math environments
 \usepackage{mathtools}        % tools for math formating
 \usepackage[nice]{nicefrac}   % nicer fractions
@@ -83,15 +127,19 @@ labelsep  = space
 \usepackage[most]{tcolorbox}  % adds colorful box environments
 
 %%% Import custom math macros
-\usepackage{CodexStyle/math_macros} % custom latex macros (macros.sty)
+\usepackage{CodexStyle/macros} % custom latex macros (macros.sty)
 
-%------------Fonts (Body and Math)--------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Fonts (Body)                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{fontspec} % Finer font selection (requires Lua/XeLaTeX)
 \usepackage{unicode-math} % Finer math font selection
 
-%%% Main font switches based on documentclass
+% Main font switches based on documentclass
 \makeatletter
-\@ifclassloaded{book}{
+\@ifclassloaded{book}{ %%% BOOK %%%
     \setmainfont{EB Garamond}[ % EB Garamond
         Ligatures   = TeX, % ligatures
         OpticalSize = On, % optical weight adjustment
@@ -99,19 +147,30 @@ labelsep  = space
         SmallCapsFeatures = {LetterSpace=5} % Adds spaces for small caps
     ]
 }{
-\@ifclassloaded{article}{
+\@ifclassloaded{article}{ %%% ARTICLE %%%
     \setmainfont{Libertinus Serif}[ % Libertinus in short documents
         Ligatures = TeX,
         Kerning   = On,
     ]
 }{
-    \PackageError{mydoc}
+\@ifclassloaded{beamer}{ %%% BEAMER %%%
+    \setmainfont{Libertinus Serif}[ % Libertinus in short documents
+        Ligatures = TeX,
+        Kerning   = On,
+    ]
+    \setsansfont{Libertinus Sans}
+}{ %%% ELSE %%%
+    \PackageError{mydoc} % throws an error
         {Unsupported document class!}
-        {`book` -> longform, `article` -> shortform}
-}}
+        {`book` -> longform, `article` -> shortform, `beamer` -> presentation}
+}}}
 \makeatother
 
-%%% Math fonts (Libertinus and Latin Modern)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                  Fonts (Math)                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \setmathfont{Libertinus Math}[ % nice neutral (near) universal math font
     Scale=MatchLowercase % set scale
 ]
@@ -120,7 +179,11 @@ labelsep  = space
     Scale=MatchLowercase % set scale
 ]
 
-%--------------------Tables---------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                     Tables                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{array} % tabular functions
 \usepackage{dcolumn} % allows for aligning of values wrt to the decimal
 \newcolumntype{C}{>{$\displaystyle}c<{$}} % centered math column
@@ -128,9 +191,13 @@ labelsep  = space
 \newcolumntype{R}{>{$\displaystyle}r<{$}} % right aligned math column
 \renewcommand{\arraystretch}{1.5} % vertical spacing of tables
 
+
 %%% UNDER CONSTRUCTION %%%
-%-------------------------------------------------------------------------------
-% Figures TiKz !!!TODO FIX THIS!!!
+%-----------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                 Graphical Setup               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{tikz}
 \usetikzlibrary{
 	calc,
@@ -156,5 +223,5 @@ labelsep  = space
 \pgfdeclarelayer{foreground}
 \pgfsetlayers{background,main,foreground}
 
-\usepackage{CodexStyle/theme/tikzstyles}
+\usepackage{CodexStyle/layouts/tikzstyles}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
