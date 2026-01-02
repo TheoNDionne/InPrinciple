@@ -15,29 +15,37 @@
 
 Simply stated, classical mechanics is the physical theory of the world as we experience it. The main goal of this chapter is to state some reasonable \textit{axioms} (statements that form the hypotheses of a mathematical theory) inspired by our experience of Nature (which is inherently confined to our scale) which are then used to derive the theory known as classical mechanics. Although this procedure may be regarded as superfluous or \enquote{overkill} for this well known science, it is important to realize \textit{how} physical laws emerge from assumptions, since this is how the hypotheses underpinning the ideas are tested. In principle then, if the theory is derived with rigour from the axioms, this procedure is sufficient to carry out proper science. Hence, this chapter will also serve as inspiration and even a template for more complex fields for which the physical conclusions are far less obvious from the start.
 
-The main approach in establishing the axioms will be to look for regularity; once it has been identified what \textit{type} of phenomena is being studied, one can then search for patterns which characterize all the phenomena of a given class. In this case, we will focus on how objects move on our scale.
+The main approach in establishing the axioms will be to look for regularity; once it has been identified what \textit{type} of phenomena is being studied, one can then search for patterns which characterize all the phenomena of a given class. In this first case, we will focus on how objects move on our scale.
 
-We notice that objects for example can be in different \textit{places}. Two separate places are related by the intuitive notion of a \textit{distance}.
+To start, we notice that objects can be in different \textit{places}. This we will take to be a basic property of what we call \textit{space}. Two separate places are related by the intuitive notion of a \textit{distance}. From this heuristic notion of distance, we can add further nuance: not all objects that are the same distance away from a reference object are in the same place, there is thus also a notion of what we call \textit{direction}. Taken together, we thus see that two objects are related by a notion of relative position.
 
-\begin{axiombox}{Distance}{ax:distance}
-    The \textbf{distance} is the measure of \red{[...]}. \red{Should this be direction?}
-\end{axiombox}
-
+\red{
 Although we could refer exclusively to the distance between objects, it would become extremely difficult to keep track of a collection of anything over a few. Hence, a useful trick is to set an \textit{origin}: a point of no physical significance, but a reference point in space whose distance from all other points is the way in which \textit{position} is defined.
 
 \begin{definitionbox}{Position}{def:position}
-    The position of any point is its distance from the origin. The vector that encodes position is labeled $\ve{q}\in\mathbb{R}^3$. The components of $\ve{q}$ are called the coordinates.
+    \red{The position of any point is its distance from the origin. The vector that encodes position is labeled $\ve{q}\in\mathbb{R}^3$. The components of $\ve{q}$ are called the coordinates.}
 \end{definitionbox}
+}
 
-Of course, we also know that things \textit{happen}. Indeed, we have an intuitive notion of \textit{after}.
+\begin{axiombox}{Relative position}{ax:rel_position}
+\red{relative position is not the right vocab... workshop this, maybe the correct axiom is then space???}
+
+Let $P_1, P_2\in\mathbb{R}^3$ be two points in space with $\ve{r}_1,\ve{r}_2\in\mathbb{R}^3$ their respective coordinates. Their relative position (which encodes both the notion of distance and direction) is defined as the vector $\ve{r}_{2\leftarrow1} \equiv \ve{r}_2 - \ve{r}_1$. Note that this property is entirely independent of the choice of origin and is thus intrinsic (contrary to position itself).
+\end{axiombox}
+
+Of course, we also know that things \textit{happen}. For example, you were born, now you live and one day you will eventually die. We could then say that there is a natural order to events.
 
 \begin{axiombox}{Chronology}{ax:chronology}
-	There exists an order in which things happen. \red{should this be duration? Needs to be on equal footing as the space}
+	There exists an order in which things happen.
 \end{axiombox}
+
+\red{come up with a smooth transition into duration}
 
 \begin{definitionbox}{Time}{def:time}
     \red{The definition of time.} Once a temporal origin is chosen, the number that encodes the time is called $t\in\mathbb{R}$.
 \end{definitionbox}
+
+\red{basically, I am realizing that Space->Position->Relative position is the same as Chronology->Time->Duration... make this parallel extremely clear and crisp. I want to enstore early on that space and time are very close cousins with the exception of the arrow of time.}
 
 \red{This is where there is a figure of some trajectory... this also serves as inspo for what comes next} From \red{figure}, one can see that we can keep track of how the position of an object changed with respect to time. This can then \red{inspire determinism, the fact that there is a predetermined path for matter.}. An important ingredient is the notion that \enquote{things happen for a reason}. If the classical path is predetermined, then if we have enough information about the path at one given time $t$, then we should be able to predict the future behaviour. This can be related to causality.
 
