@@ -1,10 +1,21 @@
 \chapter{Classical Mechanics}
 
+\begin{center}
+    \begin{minipage}{0.5\textwidth}
+    	\textit{\red{
+            Some sort of quote could go here easily and be beautifully typeset. For example, consider: Lorem ipsum dolor sit amet.
+     }}
+    \end{minipage}
+\end{center}
+
+
 \section{
-    Setup of classical mechanics
+    Physical motivation
 }
 
-Classical mechanics is the physics of the world as we experience it. \red{Go on to explain how the world around us has a certain a pattern of regularity, we will use these observations to formulate principles that later become axioms of a theory that we develop AKA, these axioms are the hypotheses of our scientific theory}.
+Simply stated, classical mechanics is the physical theory of the world as we experience it. The main goal of this chapter is to state some reasonable \textit{axioms} (statements that form the hypotheses of a mathematical theory) inspired by our experience of Nature (which is inherently confined to our scale) which are then used to derive the theory known as classical mechanics. Although this procedure may be regarded as superfluous or \enquote{overkill} for this well known science, it is important to realize \textit{how} physical laws emerge from assumptions, since this is how the hypotheses underpinning the ideas are tested. In principle then, if the theory is derived with rigour from the axioms, this procedure is sufficient to carry out proper science. Hence, this chapter will also serve as inspiration and even a template for more complex fields for which the physical conclusions are far less obvious from the start.
+
+The main approach in establishing the axioms will be to look for regularity; once it has been identified what \textit{type} of phenomena is being studied, one can then search for patterns which characterize all the phenomena of a given class. In this case, we will focus on how objects move on our scale.
 
 We notice that objects for example can be in different \textit{places}. Two separate places are related by the intuitive notion of a \textit{distance}.
 
@@ -95,9 +106,9 @@ where $\delta$ signifies the total variation. We may now wonder what this condit
 Two remarks are in order. First, we have used the fact that trajectory and velocity are explicitely linked such that $\delta\dot{\ve{q}} = \dd{t}\delta\ve{q}$. Second, the variation of the path vanishes by definition at the boundaries of the integral, hence, the second term above is always zero.
 
 Since the variation is assumed to be arbitrary, we can see that the action only vanishes for any choice of boundary if:
-\al{\cboxed{
+\al{%\cboxed{
     \ddf[\mathcal{L}]{\ve{q}} - \dd{t}\ddf[\mathcal{L}]{\mkern1.5mu\dot\ve{q}} = 0
-}}
+}%}
 This condition is known as the Euler-Lagrange equation and is a fundamental result of variational calculus.
 
 \subsection{Redundance in the lagrangian formalism}
@@ -130,7 +141,7 @@ Do we expect the behaviour of the particle to change based on \textit{where} it 
 
 \subsection{Constrained particle}
 
-Alla Landau
+\red{Alla Landau}
 
 \section{Continuous symmetries and conserved quantities}
 
