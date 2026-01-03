@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  2 JAN 2026 18:38
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  2 JAN 2026 21:45
  restricted system commands enabled.
 **MAIN.tex
 (./MAIN.tex
@@ -2501,40 +2501,40 @@ warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1
 
 
-]
+] [2]
 luaotfload | features : unsupported font option: nil
 luaotfload | features : unsupported font option: nil
 LaTeX Font Info:    Font shape `TU/LibertinusMath(1)/m/n' will be
-(Font)              scaled to size 8.39163pt on input line 75.
+(Font)              scaled to size 8.39163pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(1)/m/n' will be
-(Font)              scaled to size 5.59442pt on input line 75.
+(Font)              scaled to size 5.59442pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(1)/m/n' will be
-(Font)              scaled to size 4.66202pt on input line 75.
+(Font)              scaled to size 4.66202pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 8.39163pt on input line 75.
+(Font)              scaled to size 8.39163pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 5.59442pt on input line 75.
+(Font)              scaled to size 5.59442pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(2)/m/n' will be
-(Font)              scaled to size 4.66202pt on input line 75.
+(Font)              scaled to size 4.66202pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 8.39163pt on input line 75.
+(Font)              scaled to size 8.39163pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 5.59442pt on input line 75.
+(Font)              scaled to size 5.59442pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LibertinusMath(3)/m/n' will be
-(Font)              scaled to size 4.66202pt on input line 75.
+(Font)              scaled to size 4.66202pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(0)/m/n' will be
-(Font)              scaled to size 8.35263pt on input line 75.
+(Font)              scaled to size 8.35263pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(0)/m/n' will be
-(Font)              scaled to size 5.56842pt on input line 75.
+(Font)              scaled to size 5.56842pt on input line 81.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(0)/m/n' will be
-(Font)              scaled to size 4.64035pt on input line 75.
-luaotfload | features : unsupported font option: nil [2]
+(Font)              scaled to size 4.64035pt on input line 81.
 luaotfload | features : unsupported font option: nil
 luaotfload | features : unsupported font option: nil
+luaotfload | features : unsupported font option: nil
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2544,7 +2544,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2554,7 +2554,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2565,7 +2565,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2576,7 +2576,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2586,7 +2586,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2597,7 +2597,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2607,7 +2607,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2618,7 +2618,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2628,7 +2628,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2638,7 +2638,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2649,7 +2649,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2660,7 +2660,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2670,7 +2670,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2681,7 +2681,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.106 }
+l.112 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2691,7 +2691,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.106 }
+l.112 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2699,10 +2699,11 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
+[3]
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.113 }
+l.119 }
        %}
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2712,7 +2713,7 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.113 }
+l.119 }
        %}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2721,7 +2722,7 @@ Try to go on, since this might almost work.
 ! Missing { inserted.
 <to be read again> 
                    \__um_group_begin: 
-l.113 }
+l.119 }
        %}
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2731,13 +2732,13 @@ If you're confused by all this, try typing `I}' now.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.113 }
+l.119 }
        %}
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[3]) (./out/MAIN.bbl [4] [5]) [6
+[4]) (./out/MAIN.bbl [5]) [6
 
 ] (./out/MAIN.aux
 
@@ -2759,21 +2760,25 @@ or  <return>  to continue without it.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: B8703A253C3E1755D4B13F5414724586;1884.
 )
 
 Here is how much of LuaTeX's memory you used:
- 57767 strings out of 476081
+ 57766 strings out of 476081
  125236,2373549 words of node,token memory allocated
  1469 words of node memory still in use:
    32 hlist, 2 vlist, 14 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 1 sub_mli
 st, 1 margin_kern, 3 glyph, 95 attribute, 69 glue_spec, 85 attribute_list, 2 wri
 te, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 1:7,2:4720,3:1723,4:298,5:594,6:106,7:7252,8:56,9:1202,10:10,11:
-457
- 78759 multiletter control sequences out of 65536+600000
- 89 fonts using 42408943 bytes
+   avail lists: 1:7,2:4141,3:1489,4:262,5:538,6:101,7:6585,8:56,9:1109,10:10,11:
+443
+ 78758 multiletter control sequences out of 65536+600000
+ 89 fonts using 42408719 bytes
  143i,20n,130p,1025b,2776s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/libertinus-fonts/Liber
 tinusMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/
@@ -2785,10 +2790,10 @@ otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/ebgaramond/EBGaram
 ond-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/ebgara
 mond/EBGaramond-Bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/publ
 ic/ebgaramond/EBGaramond-BoldItalic.otf>
-Output written on MAIN.pdf (9 pages, 64406 bytes).
+Output written on MAIN.pdf (9 pages, 64930 bytes).
 
-PDF statistics: 221 PDF objects out of 1000 (max. 8388607)
- 160 compressed objects within 2 object streams
+PDF statistics: 220 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  42 named destinations out of 1000 (max. 131072)
  336 words of extra memory for PDF output out of 10000 (max. 100000000)
 
