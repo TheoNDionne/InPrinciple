@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  2 JAN 2026 21:45
+This is LuaHBTeX, Version 1.22.0 (TeX Live 2025)  (format=lualatex 2025.11.14)  6 JAN 2026 14:08
  restricted system commands enabled.
 **MAIN.tex
 (./MAIN.tex
@@ -2738,7 +2738,8 @@ I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[4]) (./out/MAIN.bbl [5]) [6
+[4]
+luaotfload | features : unsupported font option: nil) (./out/MAIN.bbl [5]) [6
 
 ] (./out/MAIN.aux
 
@@ -2760,25 +2761,21 @@ or  <return>  to continue without it.
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `MAIN.out' has not changed.
 (rerunfilecheck)             Checksum: B8703A253C3E1755D4B13F5414724586;1884.
 )
 
 Here is how much of LuaTeX's memory you used:
- 57766 strings out of 476081
+ 57770 strings out of 476081
  125236,2373549 words of node,token memory allocated
  1469 words of node memory still in use:
    32 hlist, 2 vlist, 14 rule, 1 local_par, 5 glue, 4 kern, 1 penalty, 1 sub_mli
 st, 1 margin_kern, 3 glyph, 95 attribute, 69 glue_spec, 85 attribute_list, 2 wri
 te, 24 pdf_literal, 24 pdf_colorstack nodes
-   avail lists: 1:7,2:4141,3:1489,4:262,5:538,6:101,7:6585,8:56,9:1109,10:10,11:
+   avail lists: 1:7,2:4141,3:1489,4:262,5:554,6:101,7:6585,8:56,9:1109,10:11,11:
 443
- 78758 multiletter control sequences out of 65536+600000
- 89 fonts using 42408719 bytes
+ 78760 multiletter control sequences out of 65536+600000
+ 90 fonts using 42923975 bytes
  143i,20n,130p,1025b,2776s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/opentype/public/libertinus-fonts/Liber
 tinusMath-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/
@@ -2790,10 +2787,10 @@ otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/ebgaramond/EBGaram
 ond-Regular.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/public/ebgara
 mond/EBGaramond-Bold.otf></usr/local/texlive/2025/texmf-dist/fonts/opentype/publ
 ic/ebgaramond/EBGaramond-BoldItalic.otf>
-Output written on MAIN.pdf (9 pages, 64930 bytes).
+Output written on MAIN.pdf (9 pages, 66407 bytes).
 
-PDF statistics: 220 PDF objects out of 1000 (max. 8388607)
- 159 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 131072)
+PDF statistics: 222 PDF objects out of 1000 (max. 8388607)
+ 161 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 131072)
  336 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -81,7 +81,7 @@ The above corollary \red{box} then tells us that for one given time $t=t_i$ know
 }. In principle, this is all we need theoretically to \textit{solve} classical mechanics on the mathematical front.
 
 \begin{axiombox}{Galilean invariance}{ax:GalInvar}
-    \red{Frames moving at constant velocity are physically equivalent.}
+    \red{Frames moving at constant velocity are physically equivalent.}\red{This is like saying that we have a freedom of origin in velocity.}
 \end{axiombox}
 
 \red{Some spiel about fixing instead position at two different paths.}
@@ -140,12 +140,20 @@ Part of the magic of the Lagrangian formalism is that it allows for one to obtai
 
 \subsection{Free particle}
 
-A free pointlike particle has to be one of the simplest cases to analyze. By free here, I mean that the particle is in a perfect unchanging vacuum. We may now pare down the form of the lagrangian until we find the equations of motion of a free particle.
+A free pointlike particle is the simplest case to analyze. By free, I mean that the particle is in a perfect unchanging vacuum. We may now pare down the form of the lagrangian until we find the equations of motion of a free particle.
 
-Do we expect the behaviour of the particle to change based on \textit{where} it is? How about \textit{when}? More subtly, how about the direction it moves in? The answer to all of these questions is no. By supposition, all points in space and time are identical. The last thing on which the lagrangian may depend upon is the magnitude of the velocity $\abs{\dot{\ve{q}}}$. Given the definition of the norm of a vector in euclidean space $|v|\equiv\sqrt{\ve{v}\cdot\ve{v}}$, we can say then that the lagrangian depends only on the inner product $\ve{v}\cdot\ve{v}= \ve{v}^2$
+Do we expect the behaviour of the particle to change based on \textit{where} it is? How about \textit{when}? More subtly, how about the direction it moves in? The answer to all of these questions is no. By supposition, all points in space and time are identical in this vacuum. The last thing on which the lagrangian may depend upon is the magnitude of the velocity $\abs{\dot{\ve{q}}}$. Given the definition of the norm of a vector in euclidean space $|v|\equiv\sqrt{\ve{v}\cdot\ve{v}}$, we can say then that the lagrangian depends only on the inner product $\ve{v}\cdot\ve{v}= \ve{v}^2$
 \al{
     \mathcal{L} = \mathcal{L}[\ve{v}^2]
 }
+However, using the principle of Galillean invariance, the physics of this free particle shall not be different regardless of what inertial reference frame is chosen. So, we will be interested in the following substitution:
+\al{
+    \p{\ve{v}}^2\to \p{\ve{v}+\ve{u}}^2 = \ve{v}^2 + 2\ve{u}\cdot\ve{v} + \ve{u}^2
+}
+The second term is total derivative times a multiplicative constant while the last term is a constant. It can be checked that this is the only simple function of $\ve{v}^2$ that implies that the action will be extremized for the same classical path as in the initial frame. Hence, we see that the lagrangian of a free particle is, up to a multiplicative constant:
+\al{\cboxed{
+    \mathcal{L}_\text{free} = \alpha\ve{v}^2
+}}
 
 \subsection{Constrained particle}
 
